@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="1.0" prefHeight="292.0" prefWidth="394.0" style="-fx-background-color: C2CED2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <MenuBar fx:id="menuBar" nodeOrientation="RIGHT_TO_LEFT" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+        <menus>
+          <Menu fx:id="furloughMenu" mnemonicParsing="false" text="مرخصی">
+            <items>
+                  <MenuItem fx:id="findFurloughMenuItem" mnemonicParsing="false" text="ثبت و بررسی درخواست ها" />
+            </items>
+          </Menu>
+          <Menu fx:id="salaryMenu" mnemonicParsing="false" text="حقوق">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="ثبت حقوق" />
+            </items>
+          </Menu>
+            <Menu fx:id="employeeMenu" mnemonicParsing="false" text="کارکنان">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="استخدام و تغییر وضعیت" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="خوش آمدید" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font name="B Mitra" size="22.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="50.0" top="10.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="جهت انجام عملیات، روی گزینه های منو کلیک کنید." textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font name="B Mitra" size="19.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="-10.0" left="25.0" right="25.0" top="10.0" />
+         </GridPane.margin>
+      </Text>
+   </children>
+</GridPane>
